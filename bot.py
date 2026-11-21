@@ -13,7 +13,8 @@ from data import (
     ADJECTIVES, PRONUNCIATION_GUIDE, HELP_PHRASES
 )
 
-TOKEN = "9184512017:AAEWCl08bm15sTjCMcLRzPsVNRE9LOTUvLc"
+import os
+TOKEN = os.environ.get("BOT_TOKEN", "9184512017:AAEWCl08bm15sTjCMcLRzPsVNRE9LOTUvLc")
 DB_FILE = "users_db.json"
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(message)s", level=logging.INFO)
